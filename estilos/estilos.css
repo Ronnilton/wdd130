@@ -9,105 +9,87 @@ body {
     background-color: #eee;
 }
 
-header, footer {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-}
-
-header {
     font-size: 1.2em;
 }
 
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
 nav a {
-    color: #ffffff; 
-    text-decoration: none; 
-    margin: 0 15px; 
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block; 
+    text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
 nav a:hover {
     color: #dc143c; 
-    text-decoration: underline;
 }
 
 main {
+    max-width: 840px; 
     margin: 0 auto;
-    width: 600px;
     padding-top: 15px;
 }
 
 h1 {
     text-align: center;
     margin: 15px 0 25px 0;
-}
-
-main p {
-    text-align: center; 
-    line-height: 1.5rem;
-}
-
-img {
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto; 
-    border: 12px solid #fff; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    color: #111; 
 }
 
 main img {
-    width: 200px; 
+    width: 200px;
+    height: auto;
+    border: 5px solid #fff;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
-aside img {
-    width: 250px;
+main p {
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 aside {
     width: 600px; 
-    margin: 40px auto 0 auto;
-    text-align: center; 
-    padding-bottom: 20px;
+    margin: 40px auto 0 auto; 
+    border: 1px solid rgb(0 0 0 / 0.2); 
+    padding: 20px; 
+    background-color: #e2e2e2; 
+    color: #333; 
+    text-align: center;
 }
 
 aside h2 {
     margin-bottom: 15px;
-    text-align: center;
 }
 
-aside p {
-    margin-top: 15px;
-    line-height: 1.5rem;
-    text-align: center;
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-section {
-    background-color: #e2e2e2;
-    margin: 0 0 30px 0;
-    padding: 30px;
-    line-height: 1.5rem;
+p {
+    padding: 0;
 }
 
-section p {
-    margin-bottom: 15px;
-}
-
-section:first-of-type h2 {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
-
-section:not(:first-of-type) h2 {
-    margin-bottom: 15px;
-}
-
-section ul {
-    margin-left: 20px;
-}
-
-section li {
-    margin-bottom: 10px;
+footer {
+    margin-top: 15px; 
+    border-top: 1px solid #333; 
+    text-align: center; 
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
