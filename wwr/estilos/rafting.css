@@ -39,7 +39,97 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+/* Definição de Variáveis e Esquema de Cores */
+:root {
+    --cor-primaria: #055a05;      /* Verde-floresta */
+    --cor-secundaria: #f4a261;    /* Laranja/Bege */
+    --cor-destaque1: #264653;     /* Azul-escuro */
+    --cor-destaque2: #e9c46a;     /* Amarelo */
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
 
+/* Reset de Box-Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais do Body */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+/* Centralização do Conteúdo Principal */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid var(--cor-destaque2);
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilização de Títulos */
+h1, h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Espaçamento Básico */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Remoção de sublinhado nos links de redes sociais e navegação geral */
+.socialmedia a, nav a, footer a {
+    text-decoration: none;
+}
+
+/* Estilização do Bloco Hero com Sobreposição */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--cor-destaque1);
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+}
 /* Remoção de sublinhado nos ícones de redes sociais */
 .redes-sociais a {
     text-decoration: none;
