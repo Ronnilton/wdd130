@@ -1,3 +1,4 @@
+/* Resetar CSS do meu projeto */
 * {
     margin: 0;
     padding: 0;
@@ -55,25 +56,24 @@ main img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     display: block;
     margin: 0 auto 20px auto;
+    float: right;
 }
 
 main p {
-    text-align: center;
     line-height: 1.5rem;
 }
 
 aside {
     width: 600px; 
-    margin: 40px auto 0 auto; 
-    border: 1px solid rgb(0 0 0 / 0.2); 
-    padding: 20px; 
-    background-color: #e2e2e2; 
     color: #333; 
     text-align: center;
+    position: relative;
 }
 
 aside h2 {
     margin-bottom: 15px;
+    position: absolute;
+    left: 230px;
 }
 
 aside img {
@@ -92,4 +92,18 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+
+/* Seletores de Classe */
+
+.caixa{
+    border: 1px solid rgb(0 0 0 / 0.2); 
+    margin: 40px auto 0 auto; 
+    padding: 20px; 
+    background-color: #e2e2e2; 
+
+}
+
+.identacao{
+    padding-left: 2rem;
 }
